@@ -43,3 +43,26 @@ Actual output: Level 1: 1 hour(s) and 30 minute(s), Level 2: 3 hour(s) and 25 mi
 Match or correction: Match
 
 Assigned values (78 and 144) were restored in game_time.cpp and final runs were completed.
+
+CODE EXPLANATIONS
+
+diamond.cpp output shape:
+std::setw(W) right-aligns output within field width W. Using std::setw(5) for line 1 pads 4 leading spaces before 1 star. Line 2 uses std::setw(6) for 3 leading spaces, and line 3 uses std::setw(7) for 2 leading spaces. Line 4 needs no setw because it prints 7 stars directly. This offset ensures all lines line up cleanly and symmetrically on the screen. Invisible spaces were checked by highlighting text in the console window.
+
+Integer division and remainder:
+Integer division (/) divides whole numbers and discards decimals to give hours. Modulus (%) finds the remainder after division to give leftover minutes.
+
+Variable trace:
+level_one_minutes = 78
+level_two_minutes = 144
+MINUTES_PER_HOUR = 60
+level_one_hours = 78 / 60 = 1
+level_one_remaining_minutes = 78 % 60 = 18
+level_two_hours = 144 / 60 = 2
+level_two_remaining_minutes = 144 % 60 = 24
+total_difference_minutes = 144 - 78 = 66
+difference_hours = 66 / 60 = 1
+difference_remaining_minutes = 66 % 60 = 6
+
+Storing calculations in variables first:
+Storing calculations in variables keeps the math separate from the print statements. This makes the code easier to read, simpler to debug, and aligned with course style rules.
