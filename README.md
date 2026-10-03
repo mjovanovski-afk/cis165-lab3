@@ -1,4 +1,6 @@
 Lab 3: C++ Output and Time Calculations — Build, Test, and Explain with AI
+Course Section: CIS 165
+Author: Mihail Jovanovski
 
 PROGRAM 1
 Plan for diamond.cpp
@@ -19,3 +21,15 @@ Hours = total_minutes / MINUTES_PER_HOUR (integer division)
 Remaining Minutes = total_minutes % MINUTES_PER_HOUR (modulus operator)
 Difference = level_two_minutes - level_one_minutes, converted similarly.
 Output: Display each calculated variable cleanly using labeled std::cout statements.
+
+COMPILING AND RUNNING
+Open OnlineGDB in your web browser (https://www.onlinegdb.com/).
+Select C++17 from the Language drop-down menu in the top right corner.
+
+For diamond.cpp:
+Paste the code into main.cpp.
+Click the green Run button at the top.
+
+For game_time.cpp:
+Clear the editor, paste the game_time.cpp code.
+Click the green Run button at the top.
