@@ -23,7 +23,7 @@ Difference = level_two_minutes - level_one_minutes, converted similarly.
 Output: Display each calculated variable cleanly using labeled std::cout statements.
 
 COMPILING AND RUNNING
-Open OnlineGDB in your web browser (https://www.onlinegdb.com/).
+Open OnlineGDB in your web browser.
 Select C++17 from the Language drop-down menu in the top right corner.
 
 For diamond.cpp:
@@ -33,3 +33,4 @@ Click the green Run button at the top.
 For game_time.cpp:
 Clear the editor, paste the game_time.cpp code.
 Click the green Run button at the top.
+
