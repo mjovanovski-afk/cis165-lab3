@@ -4,23 +4,11 @@ Author: Mihail Jovanovski
 
 PROGRAM 1
 Plan for diamond.cpp
-
-Goal: Output a 7-line diamond pattern consisting of asterisks and spaces using exact field formatting.
-
-Approach: Use std::cout paired with std::setw() from  to set specific field widths for right-aligned output across lines 1 through 3 and 5 through 7. Line 4 will output 7 asterisks directly without padding.
+Output a 7-line diamond pattern using std::cout and std::setw() from  to control right-aligned field widths. Use widths of 5, 6, and 7 so the diamond aligns evenly on the screen.
 
 PROGRAM 2
 Plan for game_time.cpp
-
-Goal: Convert Level 1 (78 min) and Level 2 (144 min) completion times to hours and remaining minutes, then calculate how much longer Level 2 took.
-
-Constants and Inputs: MINUTES_PER_HOUR = 60, level_one_minutes = 78, level_two_minutes = 144.
-
-Calculations:
-Hours = total_minutes / MINUTES_PER_HOUR (integer division)
-Remaining Minutes = total_minutes % MINUTES_PER_HOUR (modulus operator)
-Difference = level_two_minutes - level_one_minutes, converted similarly.
-Output: Display each calculated variable cleanly using labeled std::cout statements.
+Store 78 and 144 in variables. Use integer division (/) to calculate hours and modulus (%) for remaining minutes for Level 1, Level 2, and their difference. Store all calculations in variables before displaying with std::cout.
 
 COMPILING AND RUNNING
 Open OnlineGDB in your web browser.
@@ -34,3 +22,24 @@ For game_time.cpp:
 Clear the editor, paste the game_time.cpp code.
 Click the green Run button at the top.
 
+TEST RECORDS
+
+Program/test: diamond.cpp
+Values or pattern checked: Seven required lines
+Expected result before running: Line 1 (setw 5, 1 star), Line 2 (setw 6, 3 stars), Line 3 (setw 7, 5 stars), Line 4 (0 spaces, 7 stars), Line 5 (setw 7, 5 stars), Line 6 (setw 6, 3 stars), Line 7 (setw 5, 1 star)
+Actual output: Seven lines forming an even, symmetrical diamond pattern
+Match or correction: Correction, Adjusted width values to 5, 6, and 7 so the output lined up evenly on the computer screen. 
+
+Program/test: game_time.cpp — assigned values
+Values or pattern checked: 78 and 144 minutes
+Expected result before running: Level 1 (1 hr 18 min), Level 2 (2 hr 24 min), Difference (1 hr 6 min)
+Actual output: Level 1: 1 hour(s) and 18 minute(s), Level 2: 2 hour(s) and 24 minute(s), Level 2 took 1 hour(s) and 6 minute(s) longer than Level 1
+Match or correction: Match
+
+Program/test: game_time.cpp — changed values
+Values or pattern checked: 90 and 205 minutes
+Expected result before running: Level 1 (1 hr 30 min), Level 2 (3 hr 25 min), Difference (1 hr 55 min)
+Actual output: Level 1: 1 hour(s) and 30 minute(s), Level 2: 3 hour(s) and 25 minute(s), Level 2 took 1 hour(s) and 55 minute(s) longer than Level 1
+Match or correction: Match
+
+Assigned values (78 and 144) were restored in game_time.cpp and final runs were completed.
